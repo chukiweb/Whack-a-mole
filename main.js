@@ -275,13 +275,15 @@ function tablero() {
     tablero.setAttribute("id", "tablero"); //Pponemos un id
 
     //Ponemos los estilos y la imegan de fondo
-    tablero.style.width = "100%";
+    tablero.style.width = "80%";
 
-    tablero.style.height = "auto";
+    tablero.style.padding = "30px";
+
+    tablero.style.height = "100% ";
 
     tablero.style.margin = "auto";
 
-    tablero.style.background = "#f3f3f3 url('img/fondo.jpeg') no-repeat top center";
+    tablero.style.background = "#f3f3f3 url('img/tierra.jpg') no-repeat top center";
 
     tablero.style.backgroundSize = "cover";
 
@@ -291,7 +293,7 @@ function tablero() {
 
     tablero.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr";
 
-    tablero.style.gridTemplateRows = "0.4fr 1fr 0.2fr 1fr 0.4fr";
+    tablero.style.gridTemplateRows = "100px 1fr 0.2fr 1fr 80px";
 
 
     // Añadimos los agujeros negros mediante una función que los creara.
@@ -346,11 +348,13 @@ function agujeros(cantidad) {
 
         hijos.setAttribute("data", letras[a]);
 
-        hijos.style.width = "280px";
+        hijos.style.width = "270px";
 
-        hijos.style.height = "280px";
+        hijos.style.height = "270px";
 
         hijos.style.margin = "auto";
+
+        hijos.style.padding = "10px";
 
         hijos.style.background = "#f3f3f3 url('img/agujeroNegro.jpg') no-repeat center center";
 
@@ -454,13 +458,13 @@ function titulo() {
 
     titulo.style.textAlign = "center";
 
-    titulo.style.color = "black";
+    titulo.style.color = "white";
 
     titulo.style.textShadow = "5px 5px  #DBB56C"
 
-    titulo.style.lineHeight = "3em";
+    titulo.style.lineHeight = "2em";
 
-    titulo.style.fontSize = "2.5em"
+    titulo.style.fontSize = "2em"
 
     return titulo;
 }
@@ -526,7 +530,7 @@ function musica() {
     sonido.setAttribute("autoplay", "autoplay");
 
     return sonido;
-}
+} 
 //-------------------------------------------------------------------------------------------------------------//
 
 
